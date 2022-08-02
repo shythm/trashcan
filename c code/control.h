@@ -10,19 +10,19 @@
 #define NODE_T_LEFT     0x20
 #define NODE_TERMINAL   0x40 
 
-#define VELO_DEFAULT 750.0
-#define ACC_WHEEL   200000.0
+#define VELO_DEFAULT 1000.0
+#define ACC_WHEEL   2000.0
 #define ACC_ROBOT   500.0
 #define ACC_P       400.0
-#define LIMDT       9000000.0
-#define POS_COEFF   .3
+#define LIMDT       20000000.0
+#define POS_COEF   .3
 #define PI          3.141592653589793238462643383279
 #define WHEEL_RAD   0.025*992.5/1000.0 // Wheel radius in meter
 #define NANOSEC     1000000000
 #define TICK2DEG    4.75
 #define TICK_S_W    400                  // Ticks between sensors and wheels
 
-// 
+// 1 tick = 1 step of stepmotor
 void moveTicks(int64_t ticks);
 
 // 
